@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import AppRoutes from './routes/AppRoutes.jsx'
 
-function App() {
+function App {
   const [count, setCount] = useState(0)
 
   return (
