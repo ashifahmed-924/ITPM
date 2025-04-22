@@ -52,6 +52,6 @@ app.use("/api/Loyalty", LoyaltyRoutes);
 
 //other
 app.use("/api/other", OtherRoutes);
-app.use("/api/tapcount", TapCountRoutes)
+app.use("/api/tapcount", TapCountRoutes);
 
 export default app;
