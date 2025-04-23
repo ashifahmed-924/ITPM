@@ -64,7 +64,7 @@ const AppRoutes = () => {
 
         <Route path="/WishlistReport" element={<WishlistReport />} />
       </Routes>
-    </Router>
+
   );
 };
 
