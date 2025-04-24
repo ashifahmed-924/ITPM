@@ -65,7 +65,7 @@ const AppRoutes = () => {
         <Route path="/WishlistReport" element={<WishlistReport />} />
       </Routes>
      </Router>
-  )
-}
+  );
+};
 
-export default AppRoutes
+export default AppRoutes;
