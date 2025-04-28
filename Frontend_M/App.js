@@ -14,7 +14,7 @@ import CategoryProducts from "./screens/CategoryProducts";
 import ForgotPassword from "./screens/ForgotPassword";
 import RegisterScreen from "./screens/RegisterScreen";
 import LoginScreen from "./screens/LoginScreen";
-import Profile from "./screens/Profile";
+import Profile from "./screens/Profile"
 import { WishlistProvider } from "./screens/WishlistContext";
 import Search from "./screens/Search";
 import ShopDetails from "./screens/ShopDetails";
