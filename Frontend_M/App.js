@@ -5,6 +5,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { createStackNavigator } from "@react-navigation/stack";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
+// Importing screens
 import ProductList from "./screens/ProductList";
 import Wishlist from "./screens/Wishlist";
 import QRScanner from "./screens/QRScanner";
@@ -19,9 +20,14 @@ import { WishlistProvider } from "./screens/WishlistContext";
 import Search from "./screens/Search";
 import ShopDetails from "./screens/ShopDetails";
 
+// Create bottom tab and stack navigators
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
+/* --- HOME STACK ---
+   Contains the main homepage and additional screens such as categories, profile, and search.
+   Passes setIsAuthenticated to Profile screen for logout functionality.
+*/
 // Stack Navigator for Home
 function HomeStack({ setIsAuthenticated }) {
   return (
@@ -38,7 +44,7 @@ function HomeStack({ setIsAuthenticated }) {
   );
 }
 
-// Stack Navigator for Products
+// Handles product browsing and details navigation.
 function ProductStack() {
   return (
     <Stack.Navigator>
@@ -48,7 +54,7 @@ function ProductStack() {
   );
 }
 
-// Stack Navigator for QR Scanner and Product Detail
+// Manages QR scanning and routes to product details.
 function QRScannerStack() {
   return (
     <Stack.Navigator>
@@ -57,7 +63,9 @@ function QRScannerStack() {
     </Stack.Navigator>
   );
 }
-
+/* --- WISHLIST STACK ---
+   Allows navigation between the wishlist and product detail view.
+*/
 function WishlistStack() {
   return (
     <Stack.Navigator>
@@ -68,6 +76,10 @@ function WishlistStack() {
 }
 
 // Stack Navigator for Authentication
+/* --- AUTH STACK ---
+   Contains login, register, and forgot password screens.
+   onLoginSuccess is triggered after successful authentication.
+*/
 function AuthStack({ onLoginSuccess }) {
   return (
     <Stack.Navigator>
@@ -79,7 +91,7 @@ function AuthStack({ onLoginSuccess }) {
     </Stack.Navigator>
   );
 }
-
+/* --- MAIN APP COMPONENT --- */
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true); // State to track loading
