@@ -8,7 +8,7 @@
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Platform](https://img.shields.io/badge/Platform-Mobile_&_Web-yellow?logo=android)
 
-## 📝 Overview
+#📝 Overview
 
 **Braille & Pen** is a mobile and web application designed to empower **partially blind users** by enabling intuitive navigation and communication. It combines accessibility-focused mobile interfaces with an admin dashboard for management and support.
 
