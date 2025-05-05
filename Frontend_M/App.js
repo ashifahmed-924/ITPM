@@ -6,7 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 // Importing screens
-import ProductList from "./screens/ProductList";
+import ProductList from "./screens/ProductList";;
 import Wishlist from "./screens/Wishlist";
 import QRScanner from "./screens/QRScanner";
 import ProductDetail from "./screens/ProductDetail";
