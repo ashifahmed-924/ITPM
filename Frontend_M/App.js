@@ -5,6 +5,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { createStackNavigator } from "@react-navigation/stack";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
+
 // Importing screens
 import ProductList from "./screens/ProductList";
 import Wishlist from "./screens/Wishlist";
